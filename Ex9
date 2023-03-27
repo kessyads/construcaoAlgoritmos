@@ -1,0 +1,26 @@
+//Faça um algoritmo que leia o valor de um depósito e o valor da taxa de juros. Calcule e
+//imprima o valor do rendimento e o valor total depois do rendimento.
+
+package lista.exercicio01;
+
+import java.util.Scanner;
+
+public class Ex9 {
+    public static void main(String[] args) {
+    Scanner teclado = new Scanner(System.in);
+    float deposito, juros, rendimento, totalRendimento;
+    System.out.println("Qual o valor inicial do deposito?");
+    deposito = Integer.parseInt(teclado.nextLine());
+    System.out.println("Qual a taxa de juros por dia?");
+    juros = Integer.parseInt(teclado.nextLine());
+    
+    deposito = (juros * 30)/100;
+    
+    System.out.println("O rendimento de juros ao mês é"+deposito);
+    
+    totalRendimento = deposito + juros;
+    
+    System.out.println("Ao final do mês o seu rendimento é de"+totalRendimento);
+    teclado.close();    
+    }
+}

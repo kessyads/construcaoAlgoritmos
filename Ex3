@@ -1,0 +1,21 @@
+// exercício 03 -  ler um número inteiro e imprimir seu sucessor e seu antecessor;
+
+package lista.exercicio01;
+
+import java.util.Scanner;
+
+public class Ex3 {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        int num, ant, suc;
+            System.out.println("Por favor, insira um numero");
+            num = Integer.parseInt(teclado.nextLine());
+            ant = num - 1;
+            suc = num + 1;
+            
+            System.out.println("O sucessor de"+num+"eh"+suc);
+            System.out.println("O antecessor de"+num+"eh"+ant);
+            teclado.close();
+
+    }
+}

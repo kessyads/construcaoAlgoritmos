@@ -1,0 +1,21 @@
+//exercício 04 - peça ao usuário para inserir dois valores de cateto e devolva o cálculo da hipotenusa;
+
+package lista.exercicio01;
+
+import java.util.Scanner;
+
+public class Ex4 {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        int cat1, cat2;
+        System.out.println("Por favor, insira um o primeiro cateto");
+        cat1 = Integer.parseInt(teclado.nextLine());
+        System.out.println("Por favor, insira um o segundo cateto");
+        cat2 = Integer.parseInt(teclado.nextLine());
+        var hip = Math.sqrt(Math.pow(cat1, 2) + Math.pow(cat2, 2));
+        System.out.println("O valor de hipotenusa é"+hip);
+        teclado.close();
+
+
+    }
+}

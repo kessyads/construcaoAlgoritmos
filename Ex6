@@ -1,0 +1,19 @@
+//Ex6 - Ler uma temperatura em graus Centígrados e apresentá-la convertida em graus
+//Fahrenheit. A fórmula de conversão é: F  (9*C+160)/5. Onde F é a temperatura em
+//Fahrenheit e C é a temperatura em Centígrados.
+
+package lista.exercicio01;
+
+import java.util.Scanner;
+
+public class Ex6 {
+    public static void main(String[] args) {
+    Scanner teclado = new Scanner(System.in);  
+    double F, C;
+    System.out.println("Por favor, insira a temperatuda em graus centigrados");
+    C = Integer.parseInt(teclado.nextLine());
+    F = (C * 1.8) + 32;   
+   System.out.println("A temperatura em Farenheit é"+F);
+   teclado.close();
+    }
+}

@@ -1,0 +1,36 @@
+//Construir um algoritmo que efetue o cálculo do salário líquido de um professor. Sabendo os
+//dados: valor da hora aula, n° de aulas dadas no mês e percentual de desconto do INSS.
+// ht = horas trabalhadas no mês
+// vh = valor hora aula
+// pd = percentual de desconto
+// sb = salário bruto
+// td = total de desconto
+// sl = salário líquido
+package lista.exercicio01;
+
+import java.util.Scanner;
+
+
+public class Ex5 {
+    public static void main(String[] args) {
+    Scanner teclado = new Scanner(System.in);
+    double ht, vh, sb, td, sl;
+    double pd;
+    System.out.println("Por favor, insira o valor da hora aula");
+    vh = Integer.parseInt(teclado.nextLine());
+    System.out.println("Por favor, insira as horas trabalhadas");
+    ht = Integer.parseInt(teclado.nextLine());
+    System.out.println("Por favor, preencha o percentual de desconto");
+    pd = Integer.parseInt(teclado.nextLine());
+            
+    sb = vh*ht;
+    
+    System.out.println("O salário bruto é"+sb);
+    
+    sl = sb*pd/100;
+    
+    System.out.println("O salário líquido é"+sl);
+    teclado.close();
+    
+   }
+}

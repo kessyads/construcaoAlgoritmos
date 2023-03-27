@@ -1,0 +1,33 @@
+//Ex7. Efetuar o cálculo da quantidade de litros de combustível gastos em uma viagem, utilizando-
+//se o cálculo, o usuário deverá fornecer o tempo gasto na viagem e a velocidade média
+//durante a mesma. Desta forma, será possível obter a distância percorrida com a fórmula
+//DISTANCIA  TEMPO * VELOCIDADE. Tendo o valor da distância, basta calcular a
+//quantidade de litros de combustível utilizada na viagem com a fórmula: LITROS_USADOS
+//DISTÂNCIA / 12. O algoritmo deverá apresentar os valores da velocidade média, tempo
+//gasto na viagem, distância percorrida e a quantidade de litros utilizados na viagem.
+
+
+package lista.exercicio01;
+
+import java.util.Scanner;
+
+public class Ex7{
+    public static void main(String[] args) {
+    Scanner teclado = new Scanner(System.in);  
+    float tempoGasto, velocidadeMedia, consumo, distancia;
+    System.out.println("Quanto tempo a viagem levou?");
+    tempoGasto = Integer.parseInt(teclado.nextLine());
+    System.out.println("Qual a velocidade constante da viagem?");
+    velocidadeMedia = Integer.parseInt(teclado.nextLine());
+    
+    distancia = tempoGasto*velocidadeMedia;
+    
+    System.out.println("Você percorreu a distãncia de"+distancia+"quilometros");
+    
+    consumo = distancia/12;
+    
+    System.out.println("Você gastou, de combustível,"+consumo+"litros");
+    teclado.close();
+                
+    }
+}

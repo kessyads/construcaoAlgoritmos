@@ -1,0 +1,25 @@
+//Efetuar o cálculo do valor de uma prestação em atraso, utilizando a formula: PRESTAÇÃO
+// VALOR + (VALOR*(TAXA/100)*TEMPO).
+
+
+package lista.exercicio01;
+
+import java.util.Scanner;
+
+public class Ex8 {
+    public static void main(String[] args) {
+    Scanner teclado = new Scanner(System.in);
+    float valor, taxa, prestacao, tempo;
+    System.out.println("Qual o valor base da conta?");
+    valor = Integer.parseInt(teclado.nextLine());
+    System.out.println("Qual a taxa de juros?");
+    taxa = Integer.parseInt(teclado.nextLine());
+    System.out.println("Está em quantos dias de atraso?");
+    tempo = Integer.parseInt(teclado. nextLine());
+    
+    prestacao = valor + valor * (taxa/100) * tempo;
+    
+    System.out.println("O valor da sua parcela vencida é de"+prestacao);
+    teclado.close();
+    }
+}

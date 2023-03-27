@@ -1,0 +1,24 @@
+package lista.exercicio01;
+
+import java.util.Scanner;
+        
+
+
+
+public class Ex2 {
+    public static void main(String[] args){
+        Scanner teclado = new Scanner(System.in);
+        int n1, n2, n3;
+        System.out.println("Por favor, insira um numero");
+        n1 = Integer.parseInt(teclado.nextLine());
+        System.out.println("Por favor, digite o segundo numero");
+        n2 = Integer.parseInt(teclado.nextLine());
+        System.out.println("Digite o ultimo nimero");
+        n3 = Integer.parseInt(teclado.nextLine());
+        System.out.println(n1+","+n2+","+n3);
+        teclado.close();
+        
+    }
+  
+}
+
